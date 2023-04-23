@@ -134,7 +134,7 @@ width: 24px;
   display: flex;
   justify-content: center;
   background: #E7E9FC;
-border: 1px solid #2E2F42;
+border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .menu-close-btn-svg {
   fill: #2E2F42;
@@ -161,9 +161,7 @@ letter-spacing: 0.02em;
 text-transform: capitalize;
 color: #2E2F42;
 }
-.contact.link {
-  color: var(--hover-color);
-}
+
 .mob-nav-list .item:not(:last-child) {
   margin-bottom: 40px;
 }
