@@ -23,6 +23,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <header class="header">
@@ -58,6 +59,87 @@
             </ul>
           </address>
         </div>
+        <button type="button"  class="menu-btn" data-menu-open>
+          <svg class="menu-svg" width="32" height="22">
+            <use href="./images/symbol-defs-opt.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div>
+          <button  type="button" class="menu-close-btn" data-menu-close>
+            <svg width="8" height="8" class="menu-close-btn-svg">
+      <use href="./images/symbol-defs-opt.svg#icon-close-black-18dp-2-1-2"></use>
+            </svg>
+          </button>
+<nav class="mob-site-nav">
+          
+            <ul class="mob-nav-list list">
+              <li class="item">
+                <a href="./index.html" class="link nav-active">Studio</a>
+              </li>
+              <li class="item">
+                <a href="./portfolio.html" class="link">Portfolio</a>
+              </li>
+              <li class="item"><a href="" class="contact link">Contacts</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="mob-address">
+          <address class="mob-address address">
+            <ul class="mob-address-list list">
+              <li class="item">
+                <a href="tel:+110001111111" class="tel-link link">+11 (000) 111-11-11</a>
+              </li>
+              <li class="item">
+                <a href="mailto:info@devstudio.com" class="mail-link link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              
+            </ul>
+          </address>
+          <ul class="mob-social-list list">
+                  <li class="mob-social-item">
+                    <a href="" class="soc-link link">
+                      <svg class="soc-svg" width="16" height="16">
+                        <use
+                          href="./images/symbol-defs-opt.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mob-social-item">
+                    <a href="" class="soc-link link">
+                      <svg class="soc-svg" width="16" height="16">
+                        <use
+                          href="./images/symbol-defs-opt.svg#icon-twitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mob-social-item">
+                    <a href="" class="soc-link link">
+                      <svg class="soc-svg" width="16" height="16">
+                        <use
+                          href="./images/symbol-defs-opt.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mob-social-item">
+                    <a href="" class="soc-link link">
+                      <svg class="soc-svg" width="16" height="16">
+                        <use
+                          href="./images/symbol-defs-opt.svg#icon-linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+        </div>
+        
       </div>
     </header>
 
@@ -436,10 +518,14 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div>
-          <a href="./index.html" class="link logo"
+        <div class="footer-container">
+          <div class="footer-logo-text">
+          <div class="logo-container">
+            <a href="./index.html" class="link logo"
             >Web<span class="footer-logo-part">Studio</span></a
           >
+          </div>
+          
 
           <p class="footer-text">
             Increase the flow of customers and sales for your business with
@@ -449,29 +535,29 @@
         <div class="social-media">
           <p class="soc-heading">Social media</p>
 
-          <ul class="social-list list">
-            <li class="social-item">
+          <ul class="footer-social-list list">
+            <li class="footer-social-item">
               <a href="" class="footer-soc-link link">
                 <svg class="soc-svg" width="24" height="24">
                   <use href="./images/symbol-defs-opt.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
+            <li class="footer-social-item">
               <a href="" class="footer-soc-link link">
                 <svg class="soc-svg" width="24" height="24">
                   <use href="./images/symbol-defs-opt.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
+            <li class="footer-social-item">
               <a href="" class="footer-soc-link link">
                 <svg class="soc-svg" width="24" height="24">
                   <use href="./images/symbol-defs-opt.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
+            <li class="footer-social-item">
               <a href="" class="footer-soc-link link">
                 <svg class="soc-svg" width="24" height="24">
                   <use href="./images/symbol-defs-opt.svg#icon-linkedin"></use>
@@ -479,9 +565,12 @@
               </a>
             </li>
           </ul>
+          
         </div>
-
-        <form class="footer-form">
+        
+        </div>
+        
+<form class="footer-form">
           <p class="footer-form-title">Subscribe</p>
           <div class="footer-form-container">
             <input
@@ -491,15 +580,21 @@
             class="footer-form-input"
             placeholder="E-mail"
           />
-          <button type="submit" class="footer-submit-btn">
+          <div class="footer-sbm-btn-container">
+            <button type="submit" class="footer-submit-btn">
             Subscribe
             <svg class="footer-form-svg" width="24" height="24">
               <use href="./images/symbol-defs-opt.svg#icon-Frame-3"></use>
             </svg>
           </button>
           </div>
+            
+          </div>
+            
+          </div>
            
         </form>
+        
       </div>
 
       <div class="backdrop is-hidden" data-modal>
@@ -576,6 +671,7 @@
         </div>
       </div>
     </footer>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js" type="module"></script>
+    <script src="./js/menu.js" type="module"></script>
   </body>
 </html>
