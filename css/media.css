@@ -5,6 +5,9 @@
   .tel-link {
     font-size: 30px;
   }
+  .form-title {
+  font-size: 16px;
+  }
 .hero {
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
