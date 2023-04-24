@@ -344,7 +344,7 @@ min-height: 576px;
 
 .form-title {
 font-weight: 500;
-font-size: 16px;
+font-size: 11px;
 line-height: 1.5;
 text-align: center;
 letter-spacing: 0.02em;
@@ -365,6 +365,7 @@ line-height: 1.166;
 letter-spacing: 0.04em;
 color: #8E8F99;
 }
+
 
 .policy-lable{
   font-size: 12px;
