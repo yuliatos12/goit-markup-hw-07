@@ -117,6 +117,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   transition: opacity 250ms linear, visibility 300ms linear;
+ z-index: 1;
 }
 .mob-menu.is-hidden {
   opacity: 0;
@@ -209,11 +210,6 @@ header {
   background: var(--secondary-text-color);
   text-align: center;
   padding: 112px 0;
-  /* padding-top: 188px;
-  padding-bottom: 48px;
-  max-width: 1440px;
-  height: 600px; */
-
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -235,18 +231,12 @@ header {
 }
 
 .hero-title {
-  /* font-size: 56px;
-  line-height: 1.07; */
   margin-left: auto;
   margin-right: auto;
   font-size: 30px;
   line-height: 1.11;
   color: var(--hero-color);
   letter-spacing: 0.02em;
-  /* width: 496px; */
-  /* width: 320px; */
-
-  /* margin-bottom: 48px; */
   margin-bottom: 72px;
 }
 
@@ -295,8 +285,6 @@ header {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   padding: 72px 24px 24px;
-  /* min-width: 408px;
-  min-height: 576px; */
   width: calc(100% - 32px);
   min-height: 576px;
   background-color: #fcfcfc;
@@ -483,15 +471,10 @@ header {
 }
 
 .principle-list .item {
-  /* flex-basis: calc((100% - 72px) / 4); */
   flex-basis: 100%;
 }
 
 .principle-name {
-  /* font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-   */
   letter-spacing: 0.02em;
   font-weight: 700;
   font-size: 36px;
@@ -528,9 +511,7 @@ header {
 }
 
 /* ---------------------TEAM--------------- */
-/* .team .container {
- width: 264px;
-} */
+
 .team {
   background-color: var(--footer-text-color);
 }
@@ -541,7 +522,6 @@ header {
   gap: 72px;
 }
 .team-card {
-  /* flex-basis: calc((100% - 72px) / 4); */
   flex-basis: 100%;
   max-width: 264px;
   margin: 0 auto;
@@ -652,13 +632,9 @@ header {
 }
 
 /* ------------------FOOTER------------ */
-/* .footer .container {
-  width: 264px;
-} */
+
 .footer {
   background-color: var(--secondary-text-color);
-  /* padding-top: 100px;
-  padding-bottom: 100px; */
   padding-top: 96px;
   padding-bottom: 96px;
 }
@@ -683,7 +659,6 @@ header {
 
   width: 268px;
   margin: 0 auto;
-  /* margin-bottom: 72px; */
 }
 .footer .logo {
   padding-top: 0;
@@ -693,7 +668,6 @@ header {
 }
 
 .social-media {
-  /* margin-left: 120px; */
   width: 208px;
   margin: 0 auto;
 }
@@ -709,7 +683,6 @@ header {
 .footer-social-list {
   display: flex;
   gap: 16px;
-  /* margin-bottom: 72px; */
 }
 
 .footer-social-item {
