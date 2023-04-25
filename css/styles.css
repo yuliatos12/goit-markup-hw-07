@@ -147,14 +147,14 @@ header {
 }
 .mob-social-list {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 56px;
 }
 
 .mob-social-item {
   width: 40px;
   height: 40px;
-  flex-basis: calc((100% - 168px) / 4);
+  /* flex-basis: calc((100% - 168px) / 4); */
 }
 .mob-nav-list .link {
   font-weight: 700;
@@ -798,18 +798,20 @@ header {
 /************************* Portfolio **********************/
 
 .filters-section {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 .filter-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 72px;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 48px;
 }
 
-.filter-list .item + .item {
-  margin-left: 24px;
+.filter-list .item {
+flex-basis: calc((100% - 48px)) / 2;
 }
+
 .btn {
   font-family: "Roboto", sans-serif;
   padding: 12px 24px;
@@ -839,14 +841,12 @@ header {
 .card-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -48px;
-  margin-left: -24px;
+  gap: 48px;
 }
 
 .card {
-  margin-left: 24px;
-  margin-top: 48px;
-  flex-basis: calc((100% - 72px) / 3);
+
+  flex-basis: 100%;
 }
 
 .card-item-link:hover,
