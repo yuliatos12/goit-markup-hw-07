@@ -26,6 +26,11 @@
         url("../images/hero-bg-tablet-2x.jpg");
     }
   }
+  .hero-title {
+    font-size: 36px;
+  line-height: 1.11;
+  width: 320px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -84,8 +89,8 @@
     display: block;
   }
   .address-list .link {
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 12px;
+    line-height: 1.16;
     color: var(--text-color);
     display: block;
     padding-top: 24px;
@@ -150,6 +155,9 @@
   .principle-list .item {
     flex-basis: calc((100% - 24px) / 2);
   }
+  .principle-name {
+    text-align: initial;
+  }
   .team-list {
     display: flex;
     flex-wrap: wrap;
@@ -199,6 +207,24 @@
   .modal {
     width: 408px;
   }
+  .filters-section {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.filter-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 64px;
+}
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px 24px 
+}
+.card {
+  flex-basis: calc((100% - 24px) / 2);
+}
 }
 
 @media screen and (min-width: 1200px) {
@@ -215,6 +241,10 @@
   .address-list {
     display: flex;
     flex-direction: row;
+  }
+  .address-list .link {
+    font-size: 16px;
+    line-height: 1.5;
   }
   .address {
     margin-left: auto;
@@ -327,4 +357,22 @@
     justify-content: center;
     gap: 0 24px;
   }
+  .filters-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+.filter-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+.card {
+  flex-basis: calc((100% - 48px) / 3);
+}
 }
